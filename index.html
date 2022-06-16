@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <div class="main-box">
+        <div class="left-box">
+                <div class="box-bar">
+                    <img src="logo.svg" class="logo" alt="logo">
+                    <p class="title">Shibuya</p>
+                </div> 
+            <div class="credit"><p>Background image by <a href="https://unsplash.com/photos/To5wAJDt1IM" target="_blank">Jezael Melgoza</a></p></div>
+        </div>
+        <div class="right-box">
+            <div class="content">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-box">
+                <p>Let's do this!</p>
+                    <form action="#" method="get">
+                        <div class="input">
+                            <label for="firstName">First Name*</label>
+                            <input type="text" id="firstName" name="firstName" maxlength="200" required>
+                        </div>
+                        <div class="input">
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" id="lastName" name="lastName" maxlength="200" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" maxlength="200" required>
+                        </div>
+                        <div class="input">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder="1-555-555-5555">
+                        </div>
+                        <div class="input">
+                            <label for="password">Password*</label>
+                            <input type="password" id="password" name="password" minlength="8" required>
+                        </div>
+                        <div class="input">
+                            <label for="confirmPassword">Confirm Password*</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+                        </div>
+            </div>
+            <div class="content">
+                <button type="submit">
+                    Create Account
+                </button>
+                </form>
+                <p class="login-text">Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

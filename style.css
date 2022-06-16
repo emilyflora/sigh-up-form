@@ -1,0 +1,162 @@
+:root {
+    --bg-color: rgb(0, 0, 0, 1);
+    --bar-color: rgba(0, 0, 0, .7); 
+    --highlight-color: rgba(0,234,251,255);
+    --text-color: rgb(255, 255, 255);
+    --label-color: rgb(130, 130, 130);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+button {
+    padding: 1rem;
+    border: var(--highlight-color) .2rem solid;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    background-color: var(--bg-color);
+    color: var(--highlight-color);
+    margin: 0 0 1rem 0;
+}
+
+button:hover {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1.25rem 0;
+}
+
+label {
+    color: var(--label-color);
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+input {
+    font-family: inherit;
+    font-size: 80%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    border: var(--label-color) .2rem solid;
+    border-radius: .5rem;
+    color: var(--text-color);
+  }
+
+input:focus {
+    border: var(--highlight-color) .2rem solid;
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+}
+
+.logo{
+    height: 4rem;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: bold;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.main-box {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box-bar {
+    display: flex;
+    background-color: var(--bar-color);
+    margin-top: 20%;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0;
+    font-size: .9rem;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.left-box {
+    background-image: url("background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 70%;
+    position: relative;
+    text-align: center;
+}
+
+.right-box {
+    background-color: var(--bg-color);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.right-box > div:first-child {
+    padding-top: 10rem;
+}
+
+.form-box {
+    margin-bottom: 1rem;
+}
+
+.login-text {
+    font-size: .9rem;
+}
